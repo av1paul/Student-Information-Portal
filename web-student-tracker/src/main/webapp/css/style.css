@@ -1,0 +1,266 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    text-align: center;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;  
+    font-size: 24px;
+}
+
+
+.navbar__brand-heading {
+	font-size: 34px;
+	padding-bottom: 20px;
+    font-weight: 500;
+    color: #1c2955;
+}
+
+.navbar__brand-subheading {
+	font-size: 24px;
+}
+
+.main-table {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.table { 
+	border-radius: 13px; 
+	border-spacing: 0;
+	border-collapse: collapse;
+  	font-size: 16px;
+	text-align: center;	
+  	background-color: #e6e6e6;
+	margin: 0 auto;
+	width: 100%;  
+}
+
+.table__row {
+	padding: 10px;
+}
+
+.table__row-head {
+	color:white;
+	background-color: #1c2955;
+	font-weight: normal;
+	padding: 5px 10px;
+}
+
+.table__row-entry {
+	padding: 5px 10px;
+}
+
+.table__row:first-child .table__row-head:first-child {
+	border-top-left-radius: 6px;
+}
+  
+
+.table__row:first-child .table__row-head:last-child {
+	border-top-right-radius: 6px;
+}
+  
+.table__row:last-child table__row-entry:first-child {
+	border-bottom-left-radius: 6px;
+}
+  
+
+.table__row:last-child table__row-entry:last-child {
+	border-bottom-right-radius: 6px;
+}
+
+.table__link{
+    color: #1c2955;
+    text-decoration: none;
+}
+
+.table__link:hover {
+    text-decoration: underline;
+}
+
+.form {
+    background-color: #e6e6e6;
+    width: 100%; 
+    padding: 40px 20px;
+    border-left: 30px solid #1c2955;
+    border-radius: 13px;
+}
+
+.form__input {
+    width: inherit;
+    margin: 0 auto;
+}
+
+.form__submit {
+    max-width: 450px;
+    width: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+ 
+.form__label {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #1c2955;
+}
+
+.form__field {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 7px 20px;
+    border: 1px solid #9ba5a8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-bottom: 13px;
+}
+.add-student-button {
+   	background-color: #1c2955;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.save-student-button {
+    background-color: #1c2955;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.back-student-button {
+    background-color: #1c2955;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.back-student-button:hover {
+    background-color: #283c80;
+}
+
+.save-student-button:hover {
+    background-color: #283c80;
+}
+
+.add-student-button:hover {
+    background-color: #283c80;
+}
+
+.footer {
+	position:absolute;
+   	bottom:0;
+	width: 100%;
+    background-color: #1c2955;
+    padding: 43px;
+    margin-top: 50px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer__content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.footer .right {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.footer__item:hover {
+    text-decoration: underline;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+@media(max-width: 480px)
+{
+    .navbar {
+        max-width: 450px;
+        margin: 30px auto;
+        padding: 0 15px; 
+        font-size: 20px;
+    }
+
+    .nextline {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .form__field {
+        width: 100%;
+    }
+	
+	.add-student-button {
+        font-size: 13px;
+    }
+    
+    .back-student-button {
+        font-size: 13px;
+    }
+
+    .save-student-button {
+        font-size: 13px;
+    }
+	
+	.table { 
+  	font-size: 13px;
+	}
+}
